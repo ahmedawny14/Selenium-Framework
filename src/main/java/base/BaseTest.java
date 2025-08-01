@@ -22,7 +22,7 @@ public class BaseTest {
 
 	@BeforeMethod
 	@Parameters({"browser"})
-	public void setup(String browser) {
+	public void setup(@Optional("chrome") String browser) {
         Log.info("Starting setup...");
         switch(browser.toLowerCase())
 		{
