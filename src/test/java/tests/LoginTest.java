@@ -29,7 +29,7 @@ public class LoginTest extends BaseTest {
 		if (expectedResult.equals("success")) {
 			Assert.assertEquals(loginPage.showCurrentUrl(), "https://www.saucedemo.com/inventory.html");
 		} else if (expectedResult.equals("failure")) {
-			Assert.assertEquals(loginPage.showErrorMessage(), "error");
+			Assert.assertEquals(loginPage.showErrorMessage(), "Epic sadface: Username and password do not match any user in this service");
 		}
 	}
 
