@@ -28,7 +28,7 @@ public class BaseTest {
         switch(browser.toLowerCase())
 		{
 		case "chrome": driver =new ChromeDriver(); break;
-		case "firefox":driver =new  FirefoxDriver();; break;
+		case "firefox":driver =new  FirefoxDriver(); break;
  		default: System.out.println("No matching browser"); return;
 		}
 		driver.manage().window().maximize();
